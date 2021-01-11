@@ -1,16 +1,18 @@
 import { defineConfig } from 'dumi';
 
+const GITHUB_REPOSITORY_NAME = 'fe-better-practice';
+
 export default defineConfig({
   title: 'fe-better-practice',
   description: '基于 React 的前端项目最佳实践探索',
   mode: 'doc',
-  // Github Pages 需要使用 docs 作为输出目录，对应的 resolve/includes 也需要修改
-  outputPath: 'docs',
-  resolve: {
-    includes: ['src'],
-  },
+  // 配置 GitHub Pages
+  base: `/${GITHUB_REPOSITORY_NAME}`,
+  publicPath: `/${GITHUB_REPOSITORY_NAME}/`,
+  exportStatic: {},
   // 默认仅使用中文
   locales: [['zh-CN', '中文']],
   // 使用 esbuild 打包
   esbuild: {},
+  dynamicImport: {},
 });
