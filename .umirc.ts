@@ -4,7 +4,7 @@ const GITHUB_REPOSITORY_NAME = 'fe-better-practice';
 
 export default defineConfig({
   title: 'fe-better-practice',
-  description: '基于 React 的前端项目最佳实践探索',
+  description: '前端最佳实践探索',
   mode: 'doc',
   // 配置 GitHub Pages
   base: `/${GITHUB_REPOSITORY_NAME}`,
